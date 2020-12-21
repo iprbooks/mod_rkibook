@@ -1,0 +1,36 @@
+{
+  "name": "iprbooks/iprbooks-rki-sdk",
+  "description": "IPR Books RKI SDK",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Andrey Cherkasov",
+      "email": "andrey.cherkasov93@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Iprbooks\\Rki\\Sdk\\": "src/",
+      "Iprbooks\\Rki\\Sdk\\Core\\": "src/core/",
+      "Iprbooks\\Rki\\Sdk\\Models\\": "src/models/",
+      "Iprbooks\\Rki\\Sdk\\Collections\\": "src/collections/",
+      "Iprbooks\\Rki\\Sdk\\Managers\\": "src/managers/"
+    }
+  },
+  "require": {
+    "php": "5.3.* || 5.4.* || 5.5.* || 5.6.* || 7.0.* || 7.1.* || 7.2.* || 7.3.* || 7.4.*",
+    "ext-curl": "*",
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "firebase/php-jwt": "5.0.0"
+  },
+  "config": {
+    "secure-http": false,
+    "sort-packages": true,
+    "platform": {
+      "php": "7.0"
+    }
+  }
+}
